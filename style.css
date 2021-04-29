@@ -6,20 +6,30 @@ padding: 0%;
 }
 
 li, a {
-    padding-right:0.5cm;
+    padding-right:0.2cm;
     text-decoration:none;
+    color:yellow;
 
 }
 
 .nav {
+    top: 0%;
+    left: 0%;
     background-color:black;
     width: 100%;
     position: fixed;
-
 }
 
-
+a:hover {
+    background-color:purple;
+    padding:0.2cm;
+}
 
 body {
-    background-color:green;
+    background-color:green; 
+    font-family: Verdana;
+}
+
+.mytitle {
+    text-align: center;
 }
