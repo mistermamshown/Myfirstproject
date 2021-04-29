@@ -1,11 +1,22 @@
 .nav, li {
-list-style-type:none;    
-float:left;
-background-color: red;
-margin-right: 100%;
+list-style-type:none; 
+display:inline-block;
+margin: 0%;
+padding: 0%;
 }
 
+li, a {
+    padding-right:0.5cm;
+    text-decoration:none;
 
+}
+
+.nav {
+    background-color:black;
+    width: 100%;
+    position: fixed;
+
+}
 
 
 
