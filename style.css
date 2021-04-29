@@ -1,0 +1,14 @@
+.nav, li {
+list-style-type:none;    
+float:left;
+background-color: red;
+margin-right: 100%;
+}
+
+
+
+
+
+body {
+    background-color:green;
+}
