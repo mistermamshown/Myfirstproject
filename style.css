@@ -33,3 +33,13 @@ body {
 .mytitle {
     text-align: center;
 }
+
+header   {
+    background-color:blueviolet;
+    padding:0.1cm;
+    display:inline-block;
+    position: relative;
+    right: -5cm;
+    top:1cm;
+    border-radius:1cm;
+}
