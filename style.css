@@ -30,13 +30,10 @@ body {
     font-family: Verdana;
 }
 
-.mytitle {
-    text-align: center;
-}
-
 header   {
     background-color:blueviolet;
-    padding:0.1cm;
+    padding:1%;
+    width: 65%;
     display:inline-block;
     position: relative;
     right: -5cm;
