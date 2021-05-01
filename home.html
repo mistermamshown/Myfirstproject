@@ -30,7 +30,18 @@
         <br>
         <br>
         <header>
-            <h1 class="mytitle">Hello programmers, this is the Demo website</h1>
+            <h1 id="demo" class="mytitle">Hello programmers, this is the Demo website</h1>
         </header>
+        <div class="myform"><br>
+            <form action="#">
+                <input class="mydata" type="text"><br>
+                <button class="mybutton" onclick="myFunction()">Submit</button>
+            </form>
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello from the JavaScript"
+            }
+        </script>
     </body>
 </html>

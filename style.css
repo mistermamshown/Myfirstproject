@@ -40,3 +40,30 @@ header   {
     top:1cm;
     border-radius:1cm;
 }
+
+.myform {
+    position:absolute;
+    right:8cm;
+    bottom:1cm;
+    background-color:rgb(0,0,0);
+    padding:8%;
+    border-radius:5cm;
+}
+
+.mydata {
+    width:100%;
+    font-size:1cm;
+    background-color: royalblue;
+    color:yellow;
+    border-radius: 0.7cm;;
+}
+
+.mybutton {
+    background-color: tomato;
+    margin-left:40%;
+    margin-top: 4%;
+    font-size: 0.6cm;
+    border-radius: 1cm;
+
+
+}
