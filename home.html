@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Home</title>
-        <meta http-equiv="refresh" content="5">
+        <meta http-equiv="refresh" content="">
         <meta name="description" content="This is my demo website">
         <meta name="keyword" content="html Cs Javascript">
         <meta charset="UTF-8">
@@ -33,16 +33,24 @@
             <h1 id="demo" class="mytitle">Hello programmers, this is the Demo website</h1>
         </header>
         <div class="myform"><br>
-            <form action="/home.html">
-                <input  class="mydata" type="text" name="userdata"
+            <form >
+                <input id="userdata"  class="mydata" type="text" name="userdata"
                  placeholder="Enter an interger" size="20" maxlength="2" ><br>
-                <button class="mybutton" onclick="myFunction()">Submit</button>
+                <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
             </form>
-        </div>
+        </div><br><br><br>
+        <h2 id="mydata"></h2>
         <script>
+            var y = 1
+            var x = document.getElementById("userdata").value
             function myFunction() {
-                document.getElementById("demo").innerHTML = "Hello from the JavaScript"
+                if(x ) {
+                    y++
+                    document.getElementById("demo").innerHTML ="This is my x:" + y + x
+                }
+               
             }
+            
         </script>
     </body>
 </html>
