@@ -64,6 +64,11 @@ header   {
     margin-top: 4%;
     font-size: 0.6cm;
     border-radius: 1cm;
+}
 
-
+#myDiv {
+    position: absolute;
+    top:1cm;
+    right:1cm;;
+    color:red;
 }

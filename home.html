@@ -39,16 +39,31 @@
                 <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
             </form>
         </div><br><br><br>
-        <h2 id="mydata"></h2>
+        <h2 id="mydata">My data</h2>
+        <h2 id="myresult">My result</h2>
+        <h2 id="days"></h2>
+        <div id="myDiv"></div>
         <script>
-            var y = 1
-            var x = document.getElementById("userdata").value
+            var y = 0
             function myFunction() {
-                if(x ) {
-                    y++
+            var x = document.getElementById("userdata").value;
+            myElement = document.createElement("h2");;
+            var myDiv= document.getElementById("myDiv");
+            myDiv.appendChild(myElement)
+            if(x) {
+                y++
+                    myNode = document.createTextNode("Day"+y+ ":" + x + "hrs");
+                    myElement.appendChild(myNode);
                     document.getElementById("demo").innerHTML ="This is my x:" + y + x
+                    document.getElementById("myresult").innerHTML= x / y;
+                    document.getElementById("mydata").innerHTML= y;
+                    document.getElementById("days").    innerHTML= "Day"+y;
+                    
                 }
-               
+                else {
+                    var message = "Not defined";
+                    document.getElementById("demo").innerHTML = message
+                }   
             }
             
         </script>
