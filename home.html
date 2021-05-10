@@ -52,6 +52,7 @@
             myDiv.appendChild(myElement)
             if(x) {
                 y++
+                    document.getElementById("myDiv").style.display="block"
                     myNode = document.createTextNode("Day"+y+ ":" + x + "hrs");
                     myElement.appendChild(myNode);
                     document.getElementById("demo").innerHTML ="This is my x:" + y + x

@@ -68,7 +68,11 @@ header   {
 
 #myDiv {
     position: absolute;
-    top:1cm;
-    right:1cm;;
+    top:2cm;
+    right: 0.5em;cm;
     color:red;
+    background-color:blueviolet;
+    border:5px solid yellow;
+    border-radius:1cm;
+    display: none;
 }
