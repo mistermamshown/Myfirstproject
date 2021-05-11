@@ -69,10 +69,19 @@ header   {
 #myDiv {
     position: absolute;
     top:2cm;
-    right: 0.5em;cm;
+    right: 0.5em;
     color:red;
     background-color:blueviolet;
     border:5px solid yellow;
     border-radius:1cm;
     display: none;
+}
+
+#myresult {
+    display:inline;
+    padding:1cm;
+    color:yellow;
+    position: relative;
+    top:13cm;
+    left:12cm;
 }
