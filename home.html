@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="style.css">
         <style>
             .home {
-                background-color: rgb(80,65,65);
-                padding:0.2cm;
-                border-radius: 0.3cm;
-            }
+                            background-color: rgb(80,65,65);
+                            padding:0.2cm;
+                            border-radius: 0.3cm;
+                        }
         </style>
     </head>
     <body>
@@ -39,10 +39,14 @@
                 <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
             </form>
         </div><br><br><br>
-        <h2 id="mydata">My data</h2>
-        <h2 id="myresult">My result</h2>
-        <h2 id="days"></h2>
-        <div id="myDiv"></div>
+        <h2 id="days" class=days>Total days: 0</h2>
+        <div id="myDiv" class="days"></div>
+        <div class="container"> 
+            
+            
+            <h2 id="myresult" class="days">My result</h2>
+            <h2 id="mydata" class="days">My data</h2>
+        </div>
         <script>
             var y = 0
             function myFunction() {
@@ -58,7 +62,7 @@
                     document.getElementById("demo").innerHTML ="This is my x:" + y + x
                     document.getElementById("myresult").innerHTML= x / y;
                     document.getElementById("mydata").innerHTML= y;
-                    document.getElementById("days").    innerHTML= "Day"+y;
+                    document.getElementById("days").    innerHTML= "Total days: "+y;
                     
                 }
                 else {

@@ -26,7 +26,7 @@ a:hover {
 }
 
 body {
-    background-color:green; 
+    background-color:darkolivegreen; 
     font-family: Verdana;
 }
 
@@ -44,7 +44,7 @@ header   {
 .myform {
     position:absolute;
     right:8cm;
-    bottom:1cm;
+    bottom:3cm;
     background-color:rgb(0,0,0);
     padding:8%;
     border-radius:5cm;
@@ -70,18 +70,38 @@ header   {
     position: absolute;
     top:2cm;
     right: 0.5em;
-    color:red;
-    background-color:blueviolet;
-    border:5px solid yellow;
-    border-radius:1cm;
     display: none;
 }
 
-#myresult {
-    display:inline;
-    padding:1cm;
+.days {
+    background-color:purple;
+    border-top:5px solid greenyellow;
+    border-bottom: 5px solid greenyellow;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
     color:yellow;
-    position: relative;
-    top:13cm;
-    left:12cm;
+    border-radius:1cm;
+    padding:5px
+
 }
+
+#myresult{
+    position:fixed;
+    bottom: 0;
+    right: 20cm;
+}
+
+
+#mydata{
+    position:fixed;
+    bottom: 0;
+    right: 10cm;
+}
+
+#days {
+    position: fixed;
+    bottom:0;
+}
+
+
+
