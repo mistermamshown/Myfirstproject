@@ -34,8 +34,10 @@
         </header>
         <div class="myform"><br>
             <form >
+                <p id="sms" style="color:yellow;text-align:center;">
+                    Only 'Inegers' are allowed</p>
                 <input id="userdata"  class="mydata" type="text" name="userdata"
-                 placeholder="Enter an interger" size="20" maxlength="3" ><br>
+                 placeholder="Enter an interger" size="20" maxlength="3"><br>
                 <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
             </form>
         </div><br><br><br>
@@ -58,20 +60,23 @@
                 myElement = document.createElement("h2");
                 var myDiv= document.getElementById("myDiv");
                 myDiv.appendChild(myElement)
-                if(x) {
+                if(!isNaN(x)) {
                     y++
                     var myResult = a/y
                         document.getElementById("myDiv").style.display="block"
                         myNode = document.createTextNode("Day"+y+ ":" + x + "hrs");
                         myElement.appendChild(myNode);
+                        document.getElementById("sms").innerHTML= "Valid input";
+                        document.getElementById("sms").style.color = "rgb(0,255,0)"
                         document.getElementById("myresult").innerHTML= "Total hours:"+ a ;
                         document.getElementById("mydata").innerHTML= "Average:"+ myResult.toFixed(2)+"/day"
                         document.getElementById("days").innerHTML = "Total days:"+ y;
                     }
-                    else {
-                    var message = "Not defined";
-                    document.getElementById("demo").innerHTML = message
-                }   
+                    else if(x=="0")  {
+                        document.getElementById("sms").innerHTML="Not a avalid input";
+                        document.getElementById("sms").style.color = "red"
+                    }
+
             }
             
         </script>
