@@ -35,37 +35,40 @@
         <div class="myform"><br>
             <form >
                 <input id="userdata"  class="mydata" type="text" name="userdata"
-                 placeholder="Enter an interger" size="20" maxlength="2" ><br>
+                 placeholder="Enter an interger" size="20" maxlength="3" ><br>
                 <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
             </form>
         </div><br><br><br>
-        <h2 id="days" class=days>Total days: 0</h2>
+        <h2 id="days" class="days">Total days: 0</h2>
         <div id="myDiv" class="days"></div>
         <div class="container"> 
             
             
-            <h2 id="myresult" class="days">My result</h2>
-            <h2 id="mydata" class="days">My data</h2>
+            <h2 id="myresult" class="days">Total hours:0</h2>
+            <h2 id="mydata" class="days" >Average:</h2>
         </div>
         <script>
-            var y = 0
+            var y = 0;
+            var a = 0;
             function myFunction() {
-            var x = document.getElementById("userdata").value;
-            myElement = document.createElement("h2");
-            var myDiv= document.getElementById("myDiv");
-            myDiv.appendChild(myElement)
-            if(x) {
-                y++
-                    document.getElementById("myDiv").style.display="block"
-                    myNode = document.createTextNode("Day"+y+ ":" + x + "hrs");
-                    myElement.appendChild(myNode);
-                    document.getElementById("demo").innerHTML ="This is my x:" + y + x
-                    document.getElementById("myresult").innerHTML= x / y;
-                    document.getElementById("mydata").innerHTML= y;
-                    document.getElementById("days").    innerHTML= "Total days: "+y;
-                    
-                }
-                else {
+                var x = document.getElementById("userdata").value;
+                var totalHours = Number(x);
+                a = a + totalHours;
+
+                myElement = document.createElement("h2");
+                var myDiv= document.getElementById("myDiv");
+                myDiv.appendChild(myElement)
+                if(x) {
+                    y++
+                    var myResult = a/y
+                        document.getElementById("myDiv").style.display="block"
+                        myNode = document.createTextNode("Day"+y+ ":" + x + "hrs");
+                        myElement.appendChild(myNode);
+                        document.getElementById("myresult").innerHTML= "Total hours:"+ a ;
+                        document.getElementById("mydata").innerHTML= "Average:"+ myResult.toFixed(2)+"/day"
+                        document.getElementById("days").innerHTML = "Total days:"+ y;
+                    }
+                    else {
                     var message = "Not defined";
                     document.getElementById("demo").innerHTML = message
                 }   
