@@ -54,13 +54,14 @@
             var a = 0;
             function myFunction() {
                  x = document.getElementById("userdata").value;
-                var totalHours = Number(x);
-                a = a + totalHours;
-
+               
                 myElement = document.createElement("h2");
                 var myDiv= document.getElementById("myDiv");
                 myDiv.appendChild(myElement)
-                if(!isNaN(totalHours)) {
+                if(!isNaN(x)) {
+                    var totalHours = Number(x);
+                    a = a + totalHours;
+
                     y++
                     var myResult = a/y
                         document.getElementById("myDiv").style.display="block"
