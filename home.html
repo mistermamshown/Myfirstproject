@@ -60,7 +60,7 @@
                 myElement = document.createElement("h2");
                 var myDiv= document.getElementById("myDiv");
                 myDiv.appendChild(myElement)
-                if(!isNaN(x)) {
+                if(!isNaN(totalHours)) {
                     y++
                     var myResult = a/y
                         document.getElementById("myDiv").style.display="block"
@@ -72,10 +72,9 @@
                         document.getElementById("mydata").innerHTML= "Average:"+ myResult.toFixed(2)+"/day"
                         document.getElementById("days").innerHTML = "Total days:"+ y;
                     }
-                    else if(x=="0")  {
+                    else   {
                         document.getElementById("sms").innerHTML="Not a avalid input";
-                        document.getElementById("sms").style.color = "red"
-                    }
+                        document.getElementById("sms").style.color = "red";                    }
 
             }
             
