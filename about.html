@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>About</title>
-        <meta http-equiv="refresh" content="5">
+        <meta http-equiv="refresh" content="">
         <meta name="description" content="This is my demo website">
         <meta name="keyword" content="html Cs Javascript">
         <meta charset="UTF-8">
@@ -13,9 +13,9 @@
                 padding:0.2cm;
                 border-radius: 0.3cm;
             }
-            img {
-                border-radius:1cm;
-                padding:1cm;
+            .mylink {
+                text-decoration: underline;
+                color:blue
             }
         </style>                
     </head>
@@ -34,12 +34,29 @@
         <br>
         <br>
         <header>
-            <h1 class="mytitle">Hello programmers, this is the Demo website</h1>
+            <h1 class="mytitle">Welcome to my Demo website</h1>
         </header>    
-            <div class="mypic">
-                <h1>This is my pic</h1>
-                <img src="images/my pic.jpg" style="height:10cm;" title="My Photo" 
-                alt="My Photo">
+            
+            <div class="aboutme mycountaire">
+                <div class="mypic">
+                    <h1>About me</h1>
+                    <img src="images/my pic.jpg" style="height:15cm;" title="My Photo" 
+                    alt="My Photo">
+                </div>
+                <p>Hello everyone, my name is Salahuddin.
+                    I am a Full-Stack web developer from Cameroon in Africa.
+                    I was born and I am currently living in my country Cameroon.
+                    I have thaught myself Html, Css,JavaScript, Python, Django 
+                    and a few other tools as well. As a developer,
+                     I keep learning and inproving new technologies.In fact,
+                     I love coding very much because it allows me learn and
+                    to create things with the computer... 
+                    That's it for now and if you want to know more about me
+                     or you're looking to hire me,just <a class="mylink" 
+                     href="mailto:mistermamshown@gmail.com">
+                        SHOOT ME AN EMAIL</a>
+                    and let's talk...
+                    I can hold a conversation in French and English.</p>
             </div>
     </body>
 </html>
