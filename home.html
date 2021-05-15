@@ -9,10 +9,15 @@
         <link rel="stylesheet" href="style.css">
         <style>
             .home {
-                            background-color: rgb(80,65,65);
-                            padding:0.2cm;
-                            border-radius: 0.3cm;
-                        }
+                   background-color: rgb(80,65,65);
+                    padding:0.2cm;
+                    border-radius: 0.3cm;
+                }
+            .myclass {
+                color:yellow;
+                
+                
+            }
         </style>
     </head>
     <body>
@@ -33,14 +38,21 @@
         <header>
             <h1 class="mytitle">Welcome to my Demo website</h1>
         </header>
-        <div class="myform">
-            <form >
-                <p id="sms" style="color:yellow;text-align:center;">
-                    Only 'Inegers' are allowed</p>
-                <input id="userdata"  class="mydata" type="text" name="userdata"
-                 placeholder="Enter an interger" size="20" maxlength="3"><br>
-                <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
-            </form>
+            <div class="myform">
+        <form>
+         <h1 class="myclass"> Track my workikng hours </h1>
+                <div id="sms" style="color:yellow;text-align:center;">           
+            <pre style="color:orange">
+            Just input your daliy working hours in the form below,
+            hit the submit button and see the result.
+            <span style="color:red"> Only 'Inegers' are allowed</span>
+            </pre>
+            </div>
+ 
+            <input id="userdata"  class="mydata" type="text" name="userdata"
+            placeholder="Enter an interger" size="20" maxlength="3"><br>
+            <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
+                </form>
         </div><br><br><br>
         <h2 id="days" class="days">Total days: 0</h2>
         <div id="myDiv" class="days"></div>
