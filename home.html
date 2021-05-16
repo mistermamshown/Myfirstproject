@@ -41,7 +41,7 @@
             <div class="myform">
         <form>
          <h1 class="myclass"> Track my workikng hours </h1>
-                <div id="sms" style="color:yellow;text-align:center;">           
+            <div id="sms" style="color:yellow;text-align:center;">           
             <pre style="color:orange">
             Just input your daliy working hours in the form below,
             hit the submit button and see the result.
@@ -57,24 +57,49 @@
         <h2 id="days" class="days">Total days: 0</h2>
         <div id="myDiv" class="days"></div>
         <div class="container"> 
-            
-            
+            <h2 id="mypayment" class="days payement"></h2>
             <h2 id="myresult" class="days">Total hours:0</h2>
             <h2 id="mydata" class="days" >Average:</h2>
         </div>
+
+        <div class="payment">
+            <h4 style="color:red;margin-top: 0;">Includ a price
+            <br> $$$/hour</h4>
+            <form action="">$
+                <input type="number" name="payement" id="payment" placeholder="$$$/hour" 
+                style="max-width:1cm;">
+                /hour
+                <button type="button" onclick="myPayment()">Acivate</button><br>
+            <h2 id="thepayment" class="pay"></h2><br>
+            </form>
+        </div>
         <script>
+            var payment
+            function myPayment() {
+                payment = document.getElementById("payment").value;
+                document.getElementById("thepayment").style.display= "inline"
+                document.getElementById("thepayment").innerHTML = "$" + payment + "/hour"
+            }
+
+
             var y = 0;
             var a = 0;
             function myFunction() {
                  x = document.getElementById("userdata").value;
-               
-                myElement = document.createElement("h2");
+                myElement = document.createElement("h4");
                 var myDiv= document.getElementById("myDiv");
                 myDiv.appendChild(myElement)
+    
+                 
+
                 if(!isNaN(x)) {
                     var totalHours = Number(x);
                     a = a + totalHours;
-
+                    if(payment){
+                        document.getElementById("mypayment").style.display = "inline"
+                        document.getElementById("mypayment").innerHTML ="Total Price: "+
+                        "<span style='background-color:black;color:white;'>$" + payment * a + "</span>"
+                    }
                     y++
                     var myResult = a/y
                         document.getElementById("myDiv").style.display="block"
@@ -88,11 +113,13 @@
                     }
                     else   {
                         document.getElementById("sms").innerHTML="Not a avalid input";
-                        document.getElementById("sms").style.color = "red";                    }
+                        document.getElementById("sms").style.color = "red";                    
+                    }
+                    
 
             }
-            
+
         </script>
-        
+
     </body>
 </html>
