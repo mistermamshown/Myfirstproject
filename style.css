@@ -70,6 +70,7 @@ header   {
     top:2cm;
     right: 0.5em;
     display: none;
+    z-index:-1
 }
 
 .days {
