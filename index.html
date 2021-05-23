@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Home</title>
-        <meta name="viewport" content="width=device-width, initia-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="refresh" content="">
         <meta name="description" content="This is my demo website">
         <meta name="keyword" content="html Cs Javascript">
@@ -14,11 +14,6 @@
                     padding:0.2cm;
                     border-radius: 0.3cm;
                 }
-            .myclass {
-                color:yellow;
-                
-                
-            }
         </style>
     </head>
     <body>
@@ -36,44 +31,47 @@
         <br>
         <br>
         
-        <header>
-            <h1 class="mytitle">Welcome to my Demo website</h1>
+        <header class="myclass">
+            <h1> Track my workikng hours </h1>
         </header>
-            <div class="myform">
-        <form>
-         <h1 class="myclass"> Track my workikng hours </h1>
-            <div id="sms" style="color:yellow;text-align:center;">           
-            <pre style="color:orange">
-            Just input your daliy working hours in the form below,
-            hit the submit button and see the result.
-            <span style="color:red"> Only 'Inegers' are allowed</span>
-            </pre>
-            </div>
- 
-            <input id="userdata"  class="mydata" type="text" name="userdata"
-            placeholder="Enter an interger" size="20" maxlength="3"><br>
-            <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
-                </form>
-        </div><br><br><br>
-        <h2 id="days" class="days">Total days: 0</h2>
-        <div id="myDiv" class="days"></div>
-        <div class="container"> 
-            <h2 id="mypayment" class="days payement"></h2>
-            <h2 id="myresult" class="days">Total hours:0</h2>
-            <h2 id="mydata" class="days" >Average:</h2>
-        </div>
 
         <div class="payment">
-            <h4 style="color:red;margin-top: 0;">Includ a price
-            <br> $$$/hour</h4>
-            <form action="">$
-                <input type="number" name="payement" id="payment" placeholder="$$$/hour" 
-                style="max-width:1cm;">
+            <h4 style="color:white;text-align: center;">Includ a price
+            <form>$
+                <input type="number" name="payement" id="payment" style="max-width:1cm;">
                 /hour
                 <button type="button" onclick="myPayment()">Acivate</button><br>
             <h2 id="thepayment" class="pay"></h2><br>
             </form>
         </div>
+
+
+        </div>
+
+        <div class="myform">
+        <form>
+            <div class="myhelp">
+                <p class="sms"> 
+                    Just input your daily workikng hours in the form below 
+                    and see the result in a more dynamic way.
+                </p><br>
+            </div>        
+            <p style="color:red" id="sms"> Only 'Inegers' are allowed</p>
+            <input id="userdata"  class="mydata" type="text" name="userdata"
+            placeholder="hours" size="20" maxlength="3"><br>
+            <button class="mybutton" type="button" onclick="myFunction()">Submit</button>
+                </form>
+        </div><br><br><br>
+
+
+            <h2 id="days" class="days">Total days: 0</h2>
+            <div id="myDiv" class="days"></div>
+        <div class="container"> 
+            <h2 id="mypayment" class="days payement"></h2>
+            <h2 id="myresult" class="days">Total hours:0</h2>
+            <h2 id="mydata" class="days" >Average:0hr/day</h2>
+        </div>
+
         <script>
             var payment
             function myPayment() {
