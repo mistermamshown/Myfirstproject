@@ -176,7 +176,8 @@ header   {
     background-color:rgb(80, 100, 150);
     display: inline-block;
     border-radius:3cm;
-    max-width:100%
+    max-width:100%;
+    padding: 5%;
 }
 
 .aboutme {
